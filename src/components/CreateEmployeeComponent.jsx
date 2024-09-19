@@ -83,7 +83,7 @@ export default function CreateEmployeeComponent() {
 										name="firstName"
 										className="form-control"
 										value={employee.firstName}
-										onChange={changeFirstNameHandler}
+										onChange={(e) => changeFirstNameHandler(e)}
 									/>
 								</div>
 								<div className="form-group">
@@ -93,7 +93,7 @@ export default function CreateEmployeeComponent() {
 										name="lastName"
 										className="form-control"
 										value={employee.lastName}
-										onChange={changeLastNameHandler}
+										onChange={(e) => changeLastNameHandler(e)}
 									/>
 								</div>
 								<div className="form-group">
@@ -103,7 +103,7 @@ export default function CreateEmployeeComponent() {
 										name="emailId"
 										className="form-control"
 										value={employee.emailId}
-										onChange={changeEmailHandler}
+										onChange={(e) => changeEmailHandler(e)}
 									/>
 								</div>
 
